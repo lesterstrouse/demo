@@ -3,34 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Bootstrap Visualization Dashboard</title>
+<title>Barnyard Banter</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container"> 
+    <div class="container">
+      <div id="img-div" class="img-gallery">
       <article class="description-content row">
         <div class = "col-md-12">
           <div class = "card bg-primary">
             <div class="card-body">
+              <p>{{index}}</p>
               <h1 class="card-title">Barnyard Banter</h1>
             </div>
           </div>
         </div>
+      </article>
+      <article class="description-content row">
         <div class="col-md-6">
-          <img src="https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/wodu249.jpg" class="img-thumbnail">
+          <div class="cat-div">
+          <!--<img src="https://files.slack.com/files-pri/TD2G3LT7F-FLEFKB3C1/cat_33.jpg" class="img-thumbnail" style="width:500px;height:250px;"> -->
+          </div>
         </div>
         <div class="col-md-6">
-         <img src="https://previews.123rf.com/images/tratong/tratong1107/tratong110700315/10017984-beautiful-rooster-on-sunrise.jpg" class="img-thumbnail">
-        </div>
-        <div class="col-md-6">
-         <img src="https://media.mnn.com/assets/images/2017/01/cow-in-pasture.jpg.838x0_q80.jpg" class="img-thumbnail">
-        </div>
-        <div class="col-md-6">
-          <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/cc_20120702-1848_16x9.jpg?itok=DCHXWRog" class="img-thumbnail">
+          <div class="cow-div">
+         <!--img src="https://files.slack.com/files-pri/TD2G3LT7F-FLLR80AAC/cow_49.jpg" class="img-thumbnail" style="width:500px;height:250px"> -->
+          </div>
         </div>
       </article>
+      <article class="description-content row">
+        <div class="col-md-6">
+          <div id = description-image class="dog-div">
+         <!--img src="https://files.slack.com/files-pri/TD2G3LT7F-FLL2XGKHA/dog50.jpg" class="img-thumbnail" style="width:500px;height:250px"> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="shp-div">
+         <!--img src="https://files.slack.com/files-pri/TD2G3LT7F-FLNLTFV2A/sheep49.jpg" class="img-thumbnail" style="width:500px;height:250px"> -->
+          </div> 
+        </div>
+      </article>
+      </div>
+      <!---article class="description-content row">
+      <div class="col-md-12">
+        <p>"Do you want to play again?"</p>
+        <button id="button">Yes</button>
+        <button id="button2">No</button>
+      </div>
+    </article-->
     </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjst.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-</body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <!-- <script src="https://cdnjst.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="demo.js"></script>
+    </body>
