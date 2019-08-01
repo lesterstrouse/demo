@@ -22,8 +22,8 @@ def home():
 
 @app.route('/bnyd')
 def bnyd():
-    np.random.seed(20)
-    nmbr = np.random.randint(10)
+    np.random.seed(50)
+    nmbr = np.random.randint(50)
     return render_template("bnydbntr.html", index=nmbr)
 
 @app.route('/pass_val',methods=['POST'])

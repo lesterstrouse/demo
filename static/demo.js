@@ -1,5 +1,6 @@
-var idx = int(index);
- 
+var idx = index;
+//console.log("HI "+indx);
+var idx = index;
 var targetDiv = d3.select(".cat-div");
 targetDiv.html("<img src='static/test/cat/cat_"+idx+".jpg' class='img-thumbnail' />");
   
